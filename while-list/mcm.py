@@ -10,7 +10,7 @@ mcm = 0
 if (m > n):
 	mcm = m
 else:
-        mcm = n
+    mcm = n
 while ((mcm % m != 0 or mcm % n != 0) and mcm < m * n):
 	mcm = mcm + 1
 

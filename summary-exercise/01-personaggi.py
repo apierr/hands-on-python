@@ -63,8 +63,7 @@ def stampa_torta(personaggi):
 			frequenza_sesso[1] = frequenza_sesso[1] + 1
 	pie(frequenza_sesso, labels = ['maschi', 'femmine'])
 	show()
-	
-		
+
 def main():
 	nome_file = '/tmp/01-personaggi.txt'
 	# scrivi(nome_file)

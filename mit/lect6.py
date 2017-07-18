@@ -30,7 +30,7 @@ def hanoi(n, source, helper, target):
 
 # hanoi(2, 'source', 'temp', 'target')
 
-def toChars(s):
+def toLowerCase(s):
     import string
     return string.lower(s)
 
@@ -42,6 +42,6 @@ def isPal(s):
 
 def isPalindrome(s):
     """Returns True if s is a palindrome and False otherwise"""
-    return isPal(toChars(s))
+    return isPal(toLowerCase(s))
 
 #print isPalindrome('Anna Anna')

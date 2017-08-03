@@ -24,24 +24,24 @@ def hanoi(n, source, helper, target):
     if n == 1:
         print 'move from ' + source, ' to ', target
     else:
-        hanoi(n - 1, source, target, helper)
+        hanoi(n - 1, source, target, helper) # remove n − 1 discs to get access to the nth one.
         hanoi(1, source, helper, target)
         hanoi(n - 1, helper, source, target)
 
 # hanoi(2, 'source', 'temp', 'target')
 
-def toLowerCase(s):
+def toLowerCase(str):
     import string
-    return string.lower(s)
+    return string.lower(str)
 
-def isPal(s):
-    if len(s) <= 1:
+def isPal(str):
+    if len(str) <= 1:
         return True
     else:
         return s[0] == s[-1] and isPal(s[1:-1])
 
-def isPalindrome(s):
+def isPalindrome(str):
     """Returns True if s is a palindrome and False otherwise"""
-    return isPal(toLowerCase(s))
+    return isPal(toLowerCase(sre))
 
 #print isPalindrome('Anna Anna')
